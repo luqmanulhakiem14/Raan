@@ -209,14 +209,14 @@
           title: "Masukin Nama Kamu",
           input: "text",
         });
-        if (nama && nama.length < 11) {
+        if (nama && nama.length < 17) {
           window.nama = nama;
           vketikhalo = "Hai, " + nama + " ✨";
           mulainama();
         } else {
           await swals.fire(
             "Ups!",
-            "Nama tidak boleh kosong atau lebih dari 10 karakter, ya!"
+            "Nama tidak boleh kosong atau lebih dari 16 karakter, ya!"
           );
           inipesan();
         }
